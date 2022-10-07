@@ -9,5 +9,10 @@ steps:
 - task: katalonTask@1
   displayName: 'Execute Katalon Studio project'
   inputs:
-    version: '8.2.5'
-    executeArgs: '-browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/TS_RegressionTest" -apiKey=$(katalon_api_key)'
+    version: '8.3.5'
+    executeArgs: '-projectPath="C:\Users\Minh-Chien Trang\Katalon Studio\1329\test.prj" -retry=0 -testSuitePath="Test Suites/healthcare-tests - TS_RegressionTest" -browserType="Chrome" -executionProfile="default" -apiKey="398142fe-fa14-45e3-9958-751ee262bf5f" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true -webui.autoUpdateDrivers=true'
+- task: katalonTask@1
+  displayName: 'Execute Katalon Studio project'
+  inputs:
+    version: '8.3.5'
+    executeArgs: '-projectPath="C:\Users\Minh-Chien Trang\Katalon Studio\1329\test.prj" -retry=0 -testSuitePath="Test Suites/healthcare-tests - TS_RegressionTest" -browserType="Chrome" -executionProfile="default" -apiKey="398142fe-fa14-45e3-9958-751ee262bf5f" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true -webui.autoUpdateDrivers=true'
