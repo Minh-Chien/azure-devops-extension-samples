@@ -3,6 +3,7 @@ trigger:
 - master
 
 pool:
+  name: "default"
   vmImage: 'DESKTOP-1QP8KMR'
 
 steps:
